@@ -1,0 +1,21 @@
+
+
+
+.sign {
+  position: relative;
+  z-index: 2; /* Ensure the sign-in form is above the overlay */
+  background: rgba(255, 255, 255, 0.9); /* Optional: Add a light background to the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-image: url('https://cdn.pixabay.com/photo/2020/05/31/04/36/investment-5241253_1280.jpg');
+   background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

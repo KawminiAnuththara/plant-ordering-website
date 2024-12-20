@@ -1,0 +1,85 @@
+/* ExploreMenu.css */
+
+.explore-menu {
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-left: 60px;
+  }
+  
+  .explore-menu h1 {
+    color:#262626;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .explore-menu-text {
+    margin-bottom: 20px;
+    max-width: 90%;
+    color: #808080;
+  }
+  
+  .explore-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+    width: 90%;
+    margin-left: 30px;
+  }
+  .explore-menu-list::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .explore-menu-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explore-menu-list-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid transparent; /* Default border, transparent */
+    transition: border 0.3s ease;
+  }
+  
+  .explore-menu-list-item p {
+    font-size: max(1.4vw,16px);
+    color: #747474;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .explore-menu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+    width:90% ;
+  }
+  .explore-menu-list-item.active img,
+.explore-menu-list-item img.selected-image {
+  border: 2px solid #4CAF50; /* Change the border color when selected */
+}
+
+.explore-menu-list-item p:hover {
+  text-decoration: none; /* Ensure no underline appears on hover */
+}
+@media (max-width:1050px){
+   .explore-menu-text{
+    max-width: 100%;
+    font-size: 14px;
+   }
+}
+  

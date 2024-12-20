@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  height: 100vh;
+  padding-right: 50px; 
+  background-image: url('https://cdn.pixabay.com/photo/2020/05/31/04/36/investment-5241253_1280.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-ri {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Align items to the right */
+  text-align: right; /* Right-align text */
+  max-width: 400px; 
+}
+
+.textdec {
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+  
+}
+
+.textdec:hover {
+  color: #f0f0f0; 
+  transform: scale(1.1);
+}
+
+.description {
+  font-size: 24px;
+  color: #ddd; 
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button-container {
+  margin-top: 20px; 
+  align-items: center;
+  justify-content: center;
+}
+
+.get-started-button {
+  padding: 14px 28px;
+ 
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: white; 
+  color: #4b825b; 
+  transform: scale(1.05); 
+}
